@@ -1,0 +1,128 @@
+#star {
+  margin-left: -5px !important;
+  vertical-align: bottom !important;
+  opacity: 0.5;
+}
+
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
+.profile-wrapper {
+  padding: 3px;
+  background: url(../../assets/img/backgroud-profile.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  .form-control {
+    padding: 1.375rem 0.75rem !important;
+  }
+
+  .btn-userinfo {
+    text-transform: uppercase;
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 0;
+    border-width: 2px;
+    transition: .4s;
+    white-space: normal;
+    cursor: pointer;
+    color: #fff !important;
+    background-color: #b84349;
+    border-color: #b84349;
+    padding: 6px 28px;
+    font-size: 18px;
+    border-radius: 6px;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #d81a24;
+      border-color: #d81a24;
+    }
+  }
+
+  .ticket-section {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin: 10px 0;
+    border-bottom: 2px solid #666;
+
+    .ticket-date {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.167;
+      letter-spacing: 0em;
+    }
+
+    .ticket-title {
+      font-size: 20px;
+      color: #fb4226;
+      font-weight: 500;
+      line-height: 1.167;
+      letter-spacing: -0.01562em;
+    }
+
+    .ticket-details {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.167;
+      letter-spacing: 0em;
+    }
+
+    .ticket-cinema {
+      font-size: 20px;
+      font-weight: 600;
+      color: #00ac4d;
+      line-height: 1.167;
+      letter-spacing: -0.01562em;
+    }
+  }
+
+  .label-user {
+    color: #666;
+  }
+
+
+  .more {
+    opacity: 0.5 !important;
+  }
+
+  .vl {
+    margin: 8px !important;
+    width: 2px;
+    border-right: 1px solid #aaaaaa;
+    height: 25px;
+  }
+
+
+  #plus {
+    opacity: 0.8;
+  }
+
+
+  .card {
+    border-radius: 10px !important;
+  }
+
+  .btn-outlined:active {
+    color: #FFF;
+    border-color: #fff !important;
+  }
+
+  img {
+
+    cursor: pointer;
+    overflow: visible;
+  }
+
+  .btn:focus,
+  .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}

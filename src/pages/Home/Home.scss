@@ -1,0 +1,115 @@
+.backgroud-movie {
+  border-bottom: 3px solid #241d1e;
+  margin: 80px 0;
+}
+
+.cinema-name {
+  width: 210px;
+}
+
+.name-cinema {
+  color: green;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.ant-tabs-nav-list {
+  // border: 1px solid #e0e0e0;
+  border-radius: 30px;
+}
+
+.ant-tabs {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 418px;
+}
+
+.border-list {
+  // border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+
+.date {
+  text-decoration: none;
+  color: rgb(74, 77, 74);
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 0px 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #ff6f61;
+    color: #ffffff;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+  }
+
+  &::after {
+    content: "\2192";
+    margin-left: 2px;
+  }
+
+}
+
+
+.address {
+  width: 208px;
+  font-weight: 500;
+  color: #888;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+.ant-tabs-tabpane {
+  padding-left: 0px !important;
+}
+
+.rounded-circle {
+  width: 40px;
+}
+
+.img-movie {
+  width: 100px;
+  border: 3px solid #262625;
+}
+
+//Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .date {
+    padding: 0;
+  }
+
+  // Medium devices (tablets, less than 992px)
+}
+
+@media (max-width: 991.98px) {
+  .tablist-movie {
+    display: none;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+  .title-res {
+    font-size: 30px;
+}
+}

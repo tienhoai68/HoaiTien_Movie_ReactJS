@@ -1,0 +1,241 @@
+.movie-title {
+  font-size: 30px;
+  color: #fff;
+  animation: moveTitle 4s ease-in-out infinite alternate;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Helvetica", sans-serif;
+  transform-origin: center;
+}
+
+@keyframes moveTitle {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.movie-card-page {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  position: relative;
+  cursor: pointer;
+
+  // width: 233px;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .movie-image-page {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 280px;
+    }
+  }
+
+  .badge-page {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .rating-page {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #ffcc00;
+
+    .star-rating-page {
+      font-size: 24px;
+      color: #ffd700;
+
+      .star {
+        display: inline-block;
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .movie-details-page {
+    padding: 15px;
+    text-align: left;
+
+    .name-movie-page {
+      width: 190px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+
+    .icon-text {
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+      color: #3498db;
+
+      i {
+        font-size: 14px;
+        margin-right: 2px;
+      }
+    }
+
+    .movie-genres-page {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        margin-right: 5px;
+        font-size: 0.9em;
+        color: #777;
+      }
+    }
+  }
+}
+
+.premium {
+  .movie-card-page {
+    background-color: #fffcdb;
+    border: 1px solid #ffcc00;
+
+    .badge-page-page {
+      background-color: #ffcc00;
+      color: #333;
+    }
+  }
+}
+
+// Custom SCSS for Ant Design Pagination
+.ant-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ant-pagination-item {
+    &.ant-pagination-item-active {
+      background-color: red;
+      color: white;
+    }
+
+    border: 1px solid red;
+    margin: 0 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    a {
+      color: red;
+    }
+  }
+
+  .ant-pagination-jump-prev,
+  .ant-pagination-jump-next,
+  .ant-pagination-prev,
+  .ant-pagination-next {
+    .anticon {
+      color: red;
+    }
+  }
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 6px 8px;
+  font-size: 16px;
+  background-color: #dc2c29;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  i {
+    transition: transform 0.3s;
+  }
+
+  &:hover i {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    background-color: #2980b9;
+    /* Màu nền khi click */
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #c0392b;
+    transition: left 0.3s;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    left: 0;
+  }
+}
+//Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .movie-page {
+    padding: 0 3px !important;
+  }
+}
+// Medium devices (tablets, less than 992px)
+
+@media (max-width: 991.98px) {
+  .movie-page {
+    padding: 0 3px !important;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+  .movie-page{
+    max-width: 55%;
+  }
+}

@@ -1,0 +1,74 @@
+.img-moive {
+  max-width: 100px;
+}
+
+.pagination {
+  justify-content: end !important;
+}
+
+.listAction .btnAction1 {
+  color: #fff;
+  background-color: rgb(247, 175, 43);
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 5px;
+  border: none;
+}
+
+.listAction .btnAction1:hover {
+  color: #fff;
+  background-color: rgb(241, 162, 14);
+}
+
+.listAction .btnAction2 {
+  color: #fff;
+  background-color: rgb(223, 52, 52);
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 5px;
+  border: none;
+}
+
+.listAction .btnAction2:hover {
+  color: white;
+  background-color: red;
+}
+
+.listAction .btnAction3 {
+  color: #fff;
+  background-color: rgb(129, 209, 10);
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 5px;
+  border: none;
+}
+
+.listAction .btnAction3:hover {
+  color: #fff;
+  background-color: rgb(8, 175, 8);
+}
+
+.adminloading {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.img-admin {
+  border: 2px solid #333;
+}
+
+.selectMaNhom {
+  color: #333;
+  background-color: #fff;
+}
+
+.button-addfilm {
+  margin-bottom: 6px;
+  margin-right: 10px;
+}

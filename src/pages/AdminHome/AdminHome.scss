@@ -1,0 +1,80 @@
+.background-Admin {
+  background-image: url(../../../public/img/1876_hinh_nen_doraemon_4k__50_.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  .admin-Banner {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    .admin-Banner-Hand {
+      font-size: 50px;
+      animation: animationBannerHand 1.5s ease-in 0s 1;
+    }
+    .admin-Banner-Header-Title {
+      font-size: 50px;
+      animation: animationTitle 1.5s ease-in 0s 1;
+    }
+    .admin-Banner-Btn {
+      button {
+        position: relative;
+        padding: 12px 80px;
+        background-color: #4bb6b7;
+        border-radius: 20px;
+        color: white;
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+    }
+    .btn-Left {
+      animation: animationBtnLeft 1.5s ease-in 0s 1;
+    }
+    .btn-Right {
+      animation: animationBtnRight 1.5s ease-in 0s 1;
+    }
+  }
+}
+@keyframes animationTitle {
+  0% {
+    transform: translatey(-300px);
+  }
+
+  100% {
+    transform: translatey(0);
+  }
+}
+@keyframes animationBtnLeft {
+  0% {
+    transform: translateX(-500px);
+  }
+  50% {
+    transform: translatey(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animationBtnRight {
+  0% {
+    transform: translateX(500px);
+  }
+  50% {
+    transform: translatey(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animationBannerHand {
+  0% {
+    transform: translatey(-300px);
+  }
+
+  100% {
+    transform: translatey(0);
+  }
+}
